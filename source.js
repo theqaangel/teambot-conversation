@@ -8,8 +8,13 @@ var TestIntegration = function (controller) {
         bot.reply(message, 'This module is loaded from github repository.');
     };
 
+     var sayMyPurpose = function (bot, message) {
+        bot.reply(message, 'I live to help teams.');
+    };
+
     return {
         testGitHubIntegration: testGitHubIntegration,
+        sayMyPurpose: sayMyPurpose
     };
 };
 
